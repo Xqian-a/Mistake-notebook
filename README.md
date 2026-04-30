@@ -1,4 +1,4 @@
-# 错题本 (CuoTiBen) 📝
+# 错题本 (Mistake-notebook) 📝
 
 一个基于 React Native (Expo) 开发的移动端错题记录 App，支持拍照上传、框选裁剪、按科目分类管理。
 
