@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "错题本",
+    "slug": "cuotiben-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cuotiben.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "需要使用相机来拍摄错题照片",
+        "NSPhotoLibraryUsageDescription": "需要访问相册来选择错题图片"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.cuotiben.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "需要使用相机来拍摄错题照片"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "需要访问相册来选择错题图片"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "205194d9-f376-48b3-a312-5ee8fc9d73a4"
+      }
+    }
+  }
+}
